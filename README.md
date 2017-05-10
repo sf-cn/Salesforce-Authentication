@@ -1,7 +1,7 @@
 ## Authentication in custom force.com site
 
 Manage Authentication in custom force.com site; use account/contact/custom object as your site user storage.
-This managed package use session to save user identity and based on <a href="https://github.com/sf-cn/Salesforce-Site-Session" target="_blank">Custom Session Management Package</a>
+This managed package use session to save user identity and based on <a href="https://session.sfdev.cn" target="_blank">Custom Session Management Package</a>
 
 ## Getting started
 
