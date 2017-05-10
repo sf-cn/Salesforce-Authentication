@@ -1,7 +1,7 @@
 ## Authentication in custom force.com site
 
 Manage Authentication in custom force.com site; use account/contact/custom object as your site user storage.
-This managed package use session to save user identity and based on <a href="https://github.com/sf-cn/Salesforce-Site-Session" target="_blank">Custom Session Management Package</a>
+This managed package use session to save user identity and based on <a href="https://github.com/sf-cn/Salesforce-Site-Session"  target="_blank">Custom Session Management Package</a>
 
 ## Getting started
 
@@ -17,6 +17,7 @@ This managed package use session to save user identity and based on <a href="htt
 ### Implement your own user manager `Authen.WechatUserManagerBase`
 * implement `loginSiteUserCore(sObject siteUser)`
 * call `loginSiteUser()` to login user
+
 ```APEX
 public class WechatUserManager extends Authen.WechatUserManagerBase {
 
@@ -84,7 +85,8 @@ public class WechatIdentityController extends Authen.WechatIdentityController {
 }
 ```
 ### set page action `Authen.WechatIdentityController.Authorize()`
-```HTML
+
+```XML
 <apex:page controller="WechatIdentityController" action="{!Authorize}" doctype="html-5.0" applyhtmltag="false" applybodytag="false"
            showheader="false" sidebar="false" standardstylesheets="false">
 ```
